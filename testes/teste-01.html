@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando os Menus</title>
+    <style>
+        @keyframes animacao {
+            from {
+                height: 18px;
+            }
+            to {
+                height: 120px;
+            }
+        }
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            background-color: black;
+        }
+
+        header > h1 {
+            text-align: center;
+        }
+
+        nav {
+            background-color: gray;
+            width: 220px;
+        }
+
+        nav > p#destaque {
+            display: block;
+            background-color: gray;
+        }
+
+        nav > p {
+            display: none;
+        }
+
+        nav:hover > p {
+            display: block;
+        }
+
+        nav > p:hover {
+            background-color: black;
+            transition-duration: 0.5s;
+        }
+
+        p#texto {
+            color: black;
+        }
+
+        a {
+            display: block;
+            background-color: purple;
+            text-decoration: none;
+            width: 150px;
+            margin-top: 30px;
+            padding: 10px;
+        }
+
+        a:hover {
+            color: yellow;
+            animation-name: animacao;
+            animation-duration: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Testando meus Menus</h1>
+    </header>
+    <nav>
+        <p id="destaque">Passe o Mouse nesse Menu</p>
+        <p>Home</p>
+        <p>Notícias</p>
+        <p>Curiosidades</p>
+        <p>Fale Conosco</p>
+    </nav>
+    <p id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque commodi blanditiis optio aut nesciunt recusandae amet, consequatur cupiditate nihil aliquam hic quos. Optio maiores nisi officiis aliquam at ipsum atque!</p>
+    <a href="#" target="_self">Passe o Mouse Aqui</a>
+</body>
+</html>
